@@ -1,0 +1,27 @@
+.banner{
+    position: absolute;
+    left: 0;
+    top: 80px;
+width:100%;
+height: calc(100vh - 80px);
+overflow: hidden;
+background-image:url("../../Assets/motto-bg.jpg");
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.banner__img{
+width:100%;
+}
+.banner__quote{
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .banner__author{
+    font-style: italic;
+    text-align: right;
+    color:white;
+  }
