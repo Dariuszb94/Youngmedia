@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useQuery } from "react-apollo";
 import gql from "graphql-tag";
 const EXCHANGE_RATES = gql`
-  query GetExchangeRates {
-    documents {
+  query MyQuery {
+    offers {
       edges {
         node {
-          id
           title
+          content
+          price {
+            price
+          }
         }
       }
     }
@@ -15,14 +18,24 @@ const EXCHANGE_RATES = gql`
 `;
 const PostsSearch = () => {
   const { loading, error, data } = useQuery(EXCHANGE_RATES);
+  const [offers, offersChange] = useState();
   useEffect(() => {
-    console.log(data);
-  });
+    offersChange(data);
+  }, [data]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  return <div></div>;
+  return (
+    <div>
+      {offers ? console.log(offers.offers.edges[0].node.title) : null}{" "}
+      {offers
+        ? offers.offers.edges.map(function (item, i) {
+            return <li key={i}>{item.node.title}</li>;
+          })
+        : null}
+    </div>
+  );
 };
 
 export default PostsSearch;

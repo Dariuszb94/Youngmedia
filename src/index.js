@@ -4,22 +4,17 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import "./index.css";
 import PostsSearch from "./PostsSearch";
+import Header from "./Components/Header/Header";
 
 const client = new ApolloClient({
-  // Change this to the URL of your WordPress site.
   uri: "https://wp.na.stronazen.pl/graphql",
 });
 
 const App = () => (
   <ApolloProvider client={client}>
     <div className="app">
-      <h2 className="title">
-        My first WPGraphQL & Apollo app{" "}
-        <span className="emoji" role="img" aria-label="rocket">
-          🚀
-        </span>
-      </h2>
-      <PostsSearch />
+      <Header />
+      {/* <PostsSearch /> */}
     </div>
   </ApolloProvider>
 );
