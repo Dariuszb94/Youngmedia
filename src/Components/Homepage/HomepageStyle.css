@@ -32,17 +32,17 @@ width:100%;
   border: none;
 }
   .logos-list{
-    display:flex;
+    display:grid;
     padding: 0;
+    list-style-type: none;
+
   }
   .logos-section{
     max-width: 1200px;
     margin:0 auto;
     margin-top:80px;
   }
-  .logos-list{
-    list-style-type: none;
-  }
+
   .logo__img{
     max-width: 80%;
     animation:resize ease-in-out 1s;
@@ -51,19 +51,21 @@ width:100%;
     font-size:24px;
   }
   @media (max-width: 1000px) {
+    .logos-section{
+      padding:0 20px;
+    }
     .banner__quote{
       font-size: 40px;
   
+    }
+    .logos__header{
+      font-size:20px;
     }
     .banner{
       background-size: cover;
       background-position: center center;
     }
-    .logos-list{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
- 
+  
     .logo {
       width:   100% ;
   }

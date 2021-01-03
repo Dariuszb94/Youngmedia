@@ -19,11 +19,36 @@ const EXCHANGE_RATES = gql`
 `;
 const Logos = () => {
   const { error, data } = useQuery(EXCHANGE_RATES);
+  const [isMobile, changeIsMobile] = useState(false);
+
   useEffect(() => {
-    if (document.querySelector(".logo"))
-      document.querySelectorAll(".logo").forEach((el) => {
-        el.style.width = `calc(100% / ${data.logos.edges.length})`;
-      });
+    window.addEventListener("resize", listenForResize);
+    listenForResize();
+    return function cleanup() {
+      window.removeEventListener("resize", listenForResize);
+    };
+  });
+
+  const listenForResize = () => {
+    if (window.innerWidth < 1000) {
+      changeIsMobile(true);
+    } else {
+      changeIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    if (document.querySelector(".logo")) {
+      if (!isMobile)
+        document.querySelectorAll(".logos-list").forEach((el) => {
+          el.style.gridTemplateColumns = `repeat( ${data.logos.edges.length},1fr)`;
+        });
+      else {
+        document.querySelectorAll(".logos-list").forEach((el) => {
+          el.style.gridTemplateColumns = `repeat( 2,1fr)`;
+        });
+      }
+    }
   });
   if (error) return <p>Error :(</p>;
 
