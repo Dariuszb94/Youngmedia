@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import { useQuery } from "react-apollo";
 import gql from "graphql-tag";
 const EXCHANGE_RATES = gql`
@@ -18,9 +19,19 @@ const EXCHANGE_RATES = gql`
 `;
 const Logos = () => {
   const { error, data } = useQuery(EXCHANGE_RATES);
+  useEffect(() => {
+    if (document.querySelector(".logo"))
+      document.querySelectorAll(".logo").forEach((el) => {
+        el.style.width = `calc(100% / ${data.logos.edges.length})`;
+      });
+  });
   if (error) return <p>Error :(</p>;
+
   return (
     <section className="logos-section">
+      <header className="logos__header">
+        Mieliśmy przyjemność pracować dla:
+      </header>
       <ul className="logos-list">
         {data
           ? data.logos.edges.map(function (item, i) {

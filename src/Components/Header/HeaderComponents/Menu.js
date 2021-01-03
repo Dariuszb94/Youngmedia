@@ -7,7 +7,10 @@ const Menu = ({ menuItems, showMenu }) => {
         ? menuItems.menus.edges[0].node.menuItems.edges.map(function (item, i) {
             return (
               <li key={i} className="menu__element">
-                <a className="menu__element__link" href={item.node.path}>
+                <a
+                  className="menu__element__link"
+                  href={`/Youngmedia${item.node.path}`}
+                >
                   {item.node.label}
                 </a>
               </li>

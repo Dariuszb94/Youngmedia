@@ -33,20 +33,22 @@ width:100%;
 }
   .logos-list{
     display:flex;
+    padding: 0;
   }
   .logos-section{
     max-width: 1200px;
     margin:0 auto;
+    margin-top:80px;
   }
   .logos-list{
     list-style-type: none;
   }
-  .logo{
-    width: calc(100% / 6);
-  }
   .logo__img{
     max-width: 80%;
     animation:resize ease-in-out 1s;
+  }
+  .logos__header{
+    font-size:24px;
   }
   @media (max-width: 1000px) {
     .banner__quote{
@@ -61,6 +63,7 @@ width:100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+ 
     .logo {
       width:   100% ;
   }

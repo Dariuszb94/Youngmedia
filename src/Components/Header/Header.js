@@ -33,7 +33,7 @@ const Header = () => {
     <section className="header">
       {data ? (
         <div className="header__content">
-          <a href="/">
+          <a href="/Youngmedia">
             <img className="header__logo" src={Logo} alt="ym" />
           </a>
           <Menu menuItems={data} showMenu={showMenu} />
