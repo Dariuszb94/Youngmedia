@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Youngmedia/static/css/main.75917cd2.chunk.css",
-    "main.js": "/Youngmedia/static/js/main.30bc5dcd.chunk.js",
-    "main.js.map": "/Youngmedia/static/js/main.30bc5dcd.chunk.js.map",
+    "main.css": "/Youngmedia/static/css/main.1b4b20fe.chunk.css",
+    "main.js": "/Youngmedia/static/js/main.b0912cb0.chunk.js",
+    "main.js.map": "/Youngmedia/static/js/main.b0912cb0.chunk.js.map",
     "runtime-main.js": "/Youngmedia/static/js/runtime-main.6c631f7d.js",
     "runtime-main.js.map": "/Youngmedia/static/js/runtime-main.6c631f7d.js.map",
-    "static/js/2.8062446e.chunk.js": "/Youngmedia/static/js/2.8062446e.chunk.js",
-    "static/js/2.8062446e.chunk.js.map": "/Youngmedia/static/js/2.8062446e.chunk.js.map",
+    "static/js/2.072f7c8d.chunk.js": "/Youngmedia/static/js/2.072f7c8d.chunk.js",
+    "static/js/2.072f7c8d.chunk.js.map": "/Youngmedia/static/js/2.072f7c8d.chunk.js.map",
     "index.html": "/Youngmedia/index.html",
-    "static/css/main.75917cd2.chunk.css.map": "/Youngmedia/static/css/main.75917cd2.chunk.css.map",
-    "static/js/2.8062446e.chunk.js.LICENSE.txt": "/Youngmedia/static/js/2.8062446e.chunk.js.LICENSE.txt",
+    "static/css/main.1b4b20fe.chunk.css.map": "/Youngmedia/static/css/main.1b4b20fe.chunk.css.map",
+    "static/js/2.072f7c8d.chunk.js.LICENSE.txt": "/Youngmedia/static/js/2.072f7c8d.chunk.js.LICENSE.txt",
     "static/media/HomepageStyle.css": "/Youngmedia/static/media/motto-bg.726f5726.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6c631f7d.js",
-    "static/js/2.8062446e.chunk.js",
-    "static/css/main.75917cd2.chunk.css",
-    "static/js/main.30bc5dcd.chunk.js"
+    "static/js/2.072f7c8d.chunk.js",
+    "static/css/main.1b4b20fe.chunk.css",
+    "static/js/main.b0912cb0.chunk.js"
   ]
 }
