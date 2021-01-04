@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Youngmedia/static/css/main.3e7f0988.chunk.css",
+    "main.css": "/Youngmedia/static/css/main.b452e010.chunk.css",
     "main.js": "/Youngmedia/static/js/main.6dc4cdf2.chunk.js",
     "main.js.map": "/Youngmedia/static/js/main.6dc4cdf2.chunk.js.map",
     "runtime-main.js": "/Youngmedia/static/js/runtime-main.6c631f7d.js",
@@ -8,14 +8,14 @@
     "static/js/2.cffdcd9a.chunk.js": "/Youngmedia/static/js/2.cffdcd9a.chunk.js",
     "static/js/2.cffdcd9a.chunk.js.map": "/Youngmedia/static/js/2.cffdcd9a.chunk.js.map",
     "index.html": "/Youngmedia/index.html",
-    "static/css/main.3e7f0988.chunk.css.map": "/Youngmedia/static/css/main.3e7f0988.chunk.css.map",
+    "static/css/main.b452e010.chunk.css.map": "/Youngmedia/static/css/main.b452e010.chunk.css.map",
     "static/js/2.cffdcd9a.chunk.js.LICENSE.txt": "/Youngmedia/static/js/2.cffdcd9a.chunk.js.LICENSE.txt",
     "static/media/HomepageStyle.css": "/Youngmedia/static/media/motto-bg.f118cf45.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6c631f7d.js",
     "static/js/2.cffdcd9a.chunk.js",
-    "static/css/main.3e7f0988.chunk.css",
+    "static/css/main.b452e010.chunk.css",
     "static/js/main.6dc4cdf2.chunk.js"
   ]
 }
